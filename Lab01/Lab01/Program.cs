@@ -1,39 +1,17 @@
 ﻿using System;
-using System.IO;
-public class switchLearning
+
+namespace ConsoleApp2
 {
-    public static void Main()
+    class WhileTest
     {
-        Console.Write("Input day name : ");
-        string gradeString = Console.ReadLine();
-        string message;
-        switch (gradeString.ToUpper())
+        static void Main()
         {
-            case "SUN":
-                message = "sun is Sunday color Red.";
-                break;
-            case "MON":
-                message = "mon is Monday color Yellow.";
-                break;
-            case "TUE":
-                message = "tue is Tuesday color Pink.";
-                break;
-            case "WED":
-                message = "wed is Wednesday color Green.";
-                break;
-            case "THU":
-                message = "thu is Thursday color Orange.";
-                break;
-            case "FRI":
-                message = "fri is friday color Blue.";
-                break;
-            case "SAT":
-                message = "sat is Saturday color Purple.";
-                break;
-            default:
-                message = "Incorrect grade";
-                break;
+            int n = 1;
+            while (n < 6)
+            {
+                Console.WriteLine("Current value of n is {0}", n);
+                n++;
+            }
         }
-        Console.WriteLine(message);
     }
 }
